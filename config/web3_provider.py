@@ -33,7 +33,8 @@ class W3:
     # 获取chainId
     @staticmethod
     def get_chain_id():
-        return 534352
+        return 534352    # PRD
+        #return 534351   # DEV
 
     # 加载账户
     @staticmethod
@@ -67,6 +68,11 @@ class W3:
         contract_file = os.path.join(contract_path, "%s.bin" % contract_name)
         with open(contract_file, "r") as bin_code:
             return bin_code.read()
+
+    # 获取账户nonce
+    def get_nonce(self, address):
+        nonce = self.w3.eth.get_transaction_count(address)
+        return nonce
 
     # 加载合约
     def load_contract(self, contract_name, contract_address):

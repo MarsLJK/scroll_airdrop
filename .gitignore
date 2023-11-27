@@ -1,2 +1,6 @@
 /.env
 /database.csv
+/record
+/address
+/database.dev.csv
+/deploy_record.csv

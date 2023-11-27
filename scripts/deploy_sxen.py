@@ -1,9 +1,8 @@
 # coding=utf-8
 
 from config.web3_provider import W3
+from config.dev import GAS_PRICE
 
-# 配置gasPrice，gwei为单位
-GAS_PRICE = 0.8
 # 主账户索引，从0开始
 ACCOUNT_INDEX = 0
 

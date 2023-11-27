@@ -2,11 +2,10 @@
 import os
 import csv
 from config.web3_provider import W3
+from config.dev import GAS_PRICE
 
-# 配置gasPrice，gwei为单位
-GAS_PRICE = 1.1
 # 交互账户结束索引，到100结束
-ACCOUNT_INDEX_END = 100
+ACCOUNT_INDEX_END = 80
 
 FILE_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "database.csv")
 

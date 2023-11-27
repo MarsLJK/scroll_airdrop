@@ -16,3 +16,6 @@ INTERACT_ACCOUNT_MNEMONIC = os.getenv("INTERACT_ACCOUNT_MNEMONIC")
 # RPC
 SCROLL_RPC_1 = "https://rpc.ankr.com/scroll"
 SCROLL_RPC_2 = "https://rpc.scroll.io"
+
+# 配置gasPrice，gwei为单位
+GAS_PRICE = 0.4
